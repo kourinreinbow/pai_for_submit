@@ -1,0 +1,12 @@
+lerobot-record ^
+    --robot.type=so101_follower ^
+    --robot.port=COM7 ^
+    --teleop.type=so101_leader ^
+    --teleop.port=COM8 ^
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}, head: {type: opencv, index_or_path: 1, width: 640, height: 480, fps: 30}, side: {type: opencv, index_or_path: 2, width: 640, height: 480, fps: 30}}" ^
+    --display_data=true ^
+    --dataset.repo_id=kourindayo/record-si_ball ^
+    --dataset.single_task="Grab the si_ball" ^
+    --dataset.episode_time_s=30 ^
+    --dataset.reset_time_s=10 ^
+    --dataset.num_episodes=50

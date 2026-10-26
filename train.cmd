@@ -1,0 +1,1 @@
+lerobot-train --dataset.repo_id=kourindayo/record-si_ball_forcus --policy.type=act --output_dir=outputs/train/act_si_ball_forcus --job_name=act_si_ball --policy.device=cuda --wandb.enable=false --steps=3000 --policy.repo_id=kourindayo/policy-si_ball_forcus
